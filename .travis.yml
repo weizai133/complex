@@ -14,7 +14,7 @@ after_success:
     - docker build -t weizai133/complex-server ./server
     - docker build -t weizai133/complex-worker ./worker
     - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
-    - docker push weizai133/weizai133/complex-client
+    - docker push weizai133/complex-client
     - docker push weizai133/complex-nginx
     - docker push weizai133/complex-server
     - docker push weizai133/complex-worker
